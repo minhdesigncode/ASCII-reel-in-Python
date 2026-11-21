@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welcome to Nora's space</title>
+<meta name="description" content="Nora's space — product design work, process notes and small experiments, with procedural ASCII animations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div id="top" class="page">
+  <header class="bar">
+    <a href="#top" class="brand" aria-label="Nora, home">
+      <span class="mono">N</span>
+      <span class="brand-name">Nora</span>
+    </a>
+    <nav aria-label="Primary" class="nav">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#notes">Notes</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="copy">
+      <p class="eyebrow">Product designer · Portfolio</p>
+      <h1>Welcome to <em>Nora's</em> space</h1>
+      <p class="lede">A quiet corner for product design work, process notes and small experiments — like the flowers here, drawn entirely with typed characters and a little math.</p>
+      <div class="ctas">
+        <a href="#work" class="btn primary">Explore my work</a>
+        <a href="#contact" class="btn ghost">Say hello</a>
+      </div>
+      <p class="foot">70 characters · a little math · zero images</p>
+    </section>
+
+    <section class="reel" aria-label="ASCII animation reel">
+      <div class="screen">
+        <canvas id="reel" width="1536" height="1904" role="img" aria-label="ASCII animation"></canvas>
+      </div>
+      <div class="reel-bar">
+        <div class="caption">
+          <span id="reel-title" class="caption-title">Golden-angle sunflower</span>
+          <code id="reel-formula" class="caption-formula">θ = n · 137.508°,  r = c·√n</code>
+        </div>
+        <div role="group" aria-label="Choose animation" class="pills">
+          <button type="button" data-scene="sunflower" aria-pressed="true">Sunflower</button>
+          <button type="button" data-scene="roses" aria-pressed="false">Roses</button>
+          <button type="button" data-scene="eye" aria-pressed="false">Eye → Heart</button>
+          <button type="button" data-scene="guitar" aria-pressed="false">Guitar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="/assets/ascii-reel.js"></script>
+</body>
+</html>
